@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Nubian For Electronics</title>
+    <title>Nubian For Electronics | Home</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- STYLES -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -173,6 +173,10 @@
                                             <a class="nav-link" href="#">Builds</a>
                                         </li>
                                     </ul>
+                                    <div class="btn-register">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvas" aria-controls="offcanvas">REGISTER</button>
+                                    </div>
                                 </nav>
                             </div>
                         </div>
@@ -204,12 +208,11 @@
                                         <li>
                                             <a class="dropdown-item" href="#">Intel</a>
                                         </li>
-
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown down2">
                                     <a class="nav-link" href="#">
-                                        Graphic Cards
+                                        G-Cards
                                     </a>
                                     <ul class="dropdown-menu drop2">
                                         <li>
@@ -408,58 +411,36 @@
             </div>
         </header>
         <!-- SLIDER SECTION -->
-        <section class="slider d-flex f-wrap justify-content-center align-items-center">
-            <div class="slide d-flex f-wrap justify-content-center align-items-center">
-                <div class="row justify-content-center align-items-center slider-content">
-                    <div class="mother-board wow fadeInLeft">
-                        <h3>MOTHERBOARD</h3>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="slider-text text-center wow fadeInUp">
-                            <span class="subtitle">Asus Rog</span>
-                            <h1 class="title">MAXIMUS IX</h1>
-                            <p class="desc">
-                                Many desktop publishing packages and web page editors now use lorem
-                                ipsum as their default model text, and a search for lorem ipsum.
-                            </p>
-                            <div class="btn-price">
-                                <a href="#" class="shop">Shop Now</a>
-                                <span class="price">$499.00</span>
-                            </div>
+        <section class="carousel-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="slide">
+                        <div class="hidden-text wow fadeInLeft">
+                            <h3>MOTHERBOARD</h3>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="slider-img">
-                            <img class="motherboard wow slideInRight" src="img/msi-motherboard.png" alt="">
-                            <img src="img/smoke-bg.png" alt="" class="smoke">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide d-flex f-wrap justify-content-center align-items-center">
-                <div class="container">
-                    <div class="slide-content">
-                        <div class="row align-items-center">
-                            <div class="video-card wow fadeInLeft">
-                                <h3>VIDEO CARD</h3>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="titan-v">
-                                    <img src="img/titan-v.png" alt="" class="titan-card">
-                                    <div class="smoke2"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="text justify-content-center align-items-center">
-                                    <p class="mini-title">Tensor Cores</p>
-                                    <h2 class="niva">NVIDIA TITAN V</h2>
-                                    <p>
-                                        Tempor adipiscing porta a in eros eros sodales non dis ut ullamcorper aliquam
-                                        tellus nisl. Lluctus nec ullamcorper mattis.
-                                    </p>
-                                    <div class="btns">
-                                        <a href="" class="shop">SHOP NOW</a>
-                                        <a href="" class="more">VIEW MORE</a>
+                        <div class="slider-data">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="data-text">
+                                        <span>Asus Rog</span>
+                                        <h1>MAXIMUS IX</h1>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nulla iure
+                                            molestias
+                                            dolor
+                                            harum tempora? Totam, quas! Error quibusdam consectetur harum quae saepe
+                                            nemo
+                                            eum!
+                                        </p>
+                                        <div class="shop-btn">
+                                            <a href="shop.html" class="shop">SHOP NOW</a>
+                                            <span>$499.00</span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight">
+                                    <div class="data-img">
+                                        <img src="img/asus_rog_maximus_ix_extreme_1325982-removebg.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -470,8 +451,8 @@
         </section>
         <!-- CATEGORY -->
         <section class="categories">
-            <div class="container-fluid">
-                <div class="row category">
+            <div class="container">
+                <div class="row category justify-content-center">
                     <div class="col-lg-2 col-md-3 col-sm-12">
                         <div class="cat">
                             <div class="cat-img">
@@ -569,8 +550,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row cat-product">
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="row cat-product justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -595,7 +576,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -620,7 +601,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -645,7 +626,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -670,7 +651,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -695,7 +676,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -720,7 +701,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -745,7 +726,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="feature-item">
                             <div class="feature-img">
                                 <a href="">
@@ -789,8 +770,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="hover-build">
                             <div class="build-title">
                                 <span>LITE BUID</span>
@@ -812,7 +793,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="hover-build">
                             <div class="build-title">
                                 <span>CORE BUID</span>
@@ -834,7 +815,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="hover-build">
                             <div class="build-title">
                                 <span>PREMIUM BUID</span>
@@ -856,7 +837,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="hover-build">
                             <div class="build-title">
                                 <span>PRO BUID</span>
@@ -898,16 +879,16 @@
                     </div>
                 </div>
                 <div class="row cases">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="desk-top">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
                                     <div class="desk-img">
                                         <img src="img/black-electronics-pc-r-14.png.webp" alt="">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 desk-data">
-                                    <div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
+                                    <div class="desk-data">
                                         <h4>SkyTech Omega</h4>
                                         <ul class="list">
                                             <li>
@@ -937,16 +918,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="desk-top">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
                                     <div class="desk-img">
                                         <img src="img/black-electronics-pc-r-34.png.webp" alt="">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 desk-data">
-                                    <div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
+                                    <div class="desk-data">
                                         <h4>Ava Lumos</h4>
                                         <ul class="list">
                                             <li>
@@ -976,16 +957,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="desk-top">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
                                     <div class="desk-img">
                                         <img src="img/black-electronics-pc-r-24.png.webp" alt="">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 desk-data">
-                                    <div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
+                                    <div class="desk-data">
                                         <h4>Iron Conqueror</h4>
                                         <ul class="list">
                                             <li>
@@ -1015,16 +996,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="desk-top">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
                                     <div class="desk-img">
                                         <img src="img/black-electronics-pc-r-44.png.webp" alt="">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 desk-data">
-                                    <div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col">
+                                    <div class="desk-data">
                                         <h4>Maingear Rush</h4>
                                         <ul class="list">
                                             <li>
@@ -1074,57 +1055,57 @@
                     </div>
                 </div>
                 <div class="setup-gallery">
-                    <div class="row g-0 p-0">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="row g-0 p-0 justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-8-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-1-opt-1-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-2-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-3-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-5-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-6-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-7-opt-480x339.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div class="gallery">
                                 <a href="">
                                     <img src="img/black-electronics-gallary-4-opt-480x339.jpg" alt="">
@@ -1139,8 +1120,8 @@
         <footer>
             <div class="container">
                 <div class="upper-footer">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="address">
                                 <div class="logo">
                                     <h3>
@@ -1148,8 +1129,7 @@
                                     </h3>
                                 </div>
                                 <p>
-                                    Condimentum adipiscing vel neque dis nam parturient orci at scelerisque neque dis
-                                    nam parturient.
+                                    Condimentum adipiscing vel neque dis nam parturient orci
                                 </p>
                                 <ul>
                                     <li>
@@ -1167,7 +1147,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="our-stores">
                                 <div class="stores-title">
                                     <h4>OUR STORES</h4>
@@ -1194,7 +1174,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="our-stores">
                                 <div class="stores-title">
                                     <h4>USEFUL LINKS</h4>
@@ -1223,16 +1203,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright">
-                    <div class="copy-right">
-                        <p>ReDesigned by
-                            <a href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
-                            &copy; 2021
-                        </p>
-                    </div>
-                    <div class="payment">
-                        <img src="img/payments.png" alt="">
-                    </div>
+            </div>
+            <div class="copyright">
+                <div class="copy-right">
+                    <p>ReDesigned by
+                        <a href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
+                        &copy; 2021
+                    </p>
+                </div>
+                <div class="payment">
+                    <img src="img/payments.png" alt="">
                 </div>
             </div>
         </footer>
