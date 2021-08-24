@@ -14,22 +14,21 @@ $(document).ready(function () {
     })
 
     // OWL CAROUSEL
-
-    $(".slider").owlCarousel({
-        items: 1,
-        autoplay: true,
-        loop: true,
-        navigation: true,
-        navigationText: ["<i class='far fa-chevron-left'></i>", '<i class="far fa-chevron-right"></i>'],
-        autoplayHoverPause: true,
-        slideSpeed: 100,
-        itemsDesktop: false,
-        itemsDesktopSmall: false,
-        itemsTablet: false,
-        itemsMobile: false,
-        goToFirst: true,
-        goToFirstSpeed: 500,
-        pagination: false,
+        $(".parent-related").owlCarousel({
+                    items: 4,
+                    autoplay: true,
+                    loop: true,
+                    nav: true,
+                        navText: ["<i class='far fa-chevron-left'></i>", '<i class="far fa-chevron-right"></i>'],
+                        autoplayHoverPause: true,
+                        slideSpeed: 100,
+                        itemsDesktop: false,
+                        itemsDesktopSmall: false,
+                        itemsTablet: false,
+                        itemsMobile: false,
+                        goToFirst: true,
+                        goToFirstSpeed: 500,
+                    dots: false,
     });
 
     // WOW
@@ -95,10 +94,49 @@ $(document).ready(function () {
         }
     )
 
-    // 
+    // PRODUCT COUNTER
+
+    var proQty = $('.counter');
+    proQty.prepend('<span class="dec qtybtn">-</span>');
+    proQty.append('<span class="inc qtybtn">+</span>');
+    proQty.on('click', '.qtybtn', function () {
+        var $button = $(this);
+        var oldValue = $button.parent().find('input').val();
+        if ($button.hasClass('inc')) {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
+        }
+        $button.parent().find('input').val(newVal);
+    });
+
+    // PRODUCT ZOOM
+
+    $('.parent-pic').zoom();
 
     // 
 
-    // 
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
 
 })
