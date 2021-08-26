@@ -536,7 +536,6 @@ hr {
     height: 570px;
     overflow: hidden;
     position: relative;
-    display: block !important;
 }
 
 .hidden-text {
