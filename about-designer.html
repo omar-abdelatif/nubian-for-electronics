@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- STYLES -->
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -172,6 +172,10 @@
                                             <a class="nav-link" href="#">Builds</a>
                                         </li>
                                     </ul>
+                                    <div class="btn-register">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvas" aria-controls="offcanvas">REGISTER</button>
+                                    </div>
                                 </nav>
                             </div>
                         </div>
@@ -203,12 +207,11 @@
                                         <li>
                                             <a class="dropdown-item" href="#">Intel</a>
                                         </li>
-
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown down2">
                                     <a class="nav-link" href="#">
-                                        Graphic Cards
+                                        G-Cards
                                     </a>
                                     <ul class="dropdown-menu drop2">
                                         <li>
@@ -412,7 +415,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="designer-section">
-                            <img src="img/designer.jpg" alt="designer img">
+                            <div class="designer-img">
+                                <img src="img/designer.jpg" alt="designer img">
+                            </div>
                             <div class="designer-text">
                                 <span>UI DEVELOPER</span>
                                 <h1>Omar Abdelatif</h1>
@@ -441,7 +446,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="work-item">
                             <span>3</span>
                             <h4>Years In This Field</h4>
@@ -451,7 +456,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="work-item">
                             <span>500+</span>
                             <h4>HAPPY CLIENTS</h4>
@@ -461,7 +466,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="work-item">
                             <span>100+</span>
                             <h4>Finished works</h4>
@@ -471,7 +476,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="work-item">
                             <span>1</span>
                             <h4>Years work</h4>
@@ -497,7 +502,7 @@
                                 her can't quite put a finger on it is worse.
                             </p>
                         </div>
-                        <div class="test-slide owl-carousel owl-theme">
+                        <div class="testmonial-slide owl-carousel owl-theme">
                             <div class="child item">
                                 <div class="test-img">
                                     <img src="img/3799350.jpeg" alt="">
@@ -517,6 +522,22 @@
                             </div>
                             <div class="child item">
                                 <div class="test-img">
+                                    <img src="img/photo.jpeg" alt="">
+                                    </div>
+                                    <div class="test-text">
+                                        <div class="rate">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                        <bold>Sarah Conner
+                                            <span>- Google Inc</span>
+                                        </bold>
+                                    </div>
+                                    </div>
+                                    <div class="child item">
+                                        <div class="test-img">
                                     <img src="img/3799350.jpeg" alt="">
                                 </div>
                                 <div class="test-text">
@@ -592,8 +613,8 @@
         <footer>
             <div class="container">
                 <div class="upper-footer">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="address">
                                 <div class="logo">
                                     <h3>
@@ -601,8 +622,7 @@
                                     </h3>
                                 </div>
                                 <p>
-                                    Condimentum adipiscing vel neque dis nam parturient orci at scelerisque neque dis
-                                    nam parturient.
+                                    Condimentum adipiscing vel neque dis nam parturient orci
                                 </p>
                                 <ul>
                                     <li>
@@ -620,7 +640,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="our-stores">
                                 <div class="stores-title">
                                     <h4>OUR STORES</h4>
@@ -647,7 +667,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="our-stores">
                                 <div class="stores-title">
                                     <h4>USEFUL LINKS</h4>
@@ -676,16 +696,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright">
-                    <div class="copy-right">
-                        <p>ReDesigned by
-                            <a href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
-                            &copy; 2021
-                        </p>
-                    </div>
-                    <div class="payment">
-                        <img src="img/payments.png" alt="">
-                    </div>
+            </div>
+            <div class="copyright">
+                <div class="copy-right">
+                    <p>ReDesigned by
+                        <a href="https://www.facebook.com/omar.elmalek.5">Omar Abdelatif</a>
+                        &copy; 2021
+                    </p>
+                </div>
+                <div class="payment">
+                    <img src="img/payments.png" alt="">
                 </div>
             </div>
         </footer>
@@ -696,18 +716,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplaySpeed: true,
-            margin: 10,
-            items: 3,
-            pagination: false,
-            navigation: true,
-            navigationText: ['<i class="fal fa-arrow-alt-left"></i>', '<i class="fal fa-arrow-alt-right"></i>'],
-        });
-    </script>
 </body>
 
 </html>

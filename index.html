@@ -411,40 +411,53 @@
             </div>
         </header>
         <!-- SLIDER SECTION -->
-        <section class="carousel-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="slide">
-                        <div class="hidden-text wow fadeInLeft">
-                            <h3>MOTHERBOARD</h3>
+        <section class="carousel-slider owl-carousel owl-theme">
+            <div class="slide">
+                <div class="hidden-text wow fadeInLeft">
+                    <h3>MOTHERBOARD</h3>
+                </div>
+                <div class="slider-data">
+                    <div class="data-text">
+                        <span>Asus Rog</span>
+                        <h1>MAXIMUS IX</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nulla iure
+                            molestias
+                            dolor
+                            harum tempora? Totam, quas! Error quibusdam consectetur harum quae saepe
+                            nemo
+                            eum!
+                        </p>
+                        <div class="shop-btn">
+                            <a href="shop.html" class="shop">SHOP NOW</a>
+                            <span>$499.00</span>
                         </div>
-                        <div class="slider-data">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
-                                    <div class="data-text">
-                                        <span>Asus Rog</span>
-                                        <h1>MAXIMUS IX</h1>
-                                        <p>
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nulla iure
-                                            molestias
-                                            dolor
-                                            harum tempora? Totam, quas! Error quibusdam consectetur harum quae saepe
-                                            nemo
-                                            eum!
-                                        </p>
-                                        <div class="shop-btn">
-                                            <a href="shop.html" class="shop">SHOP NOW</a>
-                                            <span>$499.00</span>
-                                        </div>
-                                        </div>
-                                        </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight">
-                                    <div class="data-img">
-                                        <img src="img/asus_rog_maximus_ix_extreme_1325982-removebg.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    <div class="data-img">
+                        <img src="img/asus_rog_maximus_ix_extreme_1325982-removebg.png" alt="">
+                    </div>
+                </div>
+                </div>
+            <div class="slide">
+                <div class="hidden-text wow fadeInLeft">
+                    <h3>CASE BUILD</h3>
+                </div>
+                <div class="slider-data">
+                    <div class="data-text">
+                        <span>GAMING BUILD</span>
+                        <h1>AMD GAMING BUILD</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nulla iure
+                            molestias dolor harum tempora? Totam, quas! Error quibusdam consectetur harum quae saepe
+                            nemo eum!
+                            </p>
+                        <div class="shop-btn">
+                            <a href="shop.html" class="shop">SHOP NOW</a>
+                            <span>$299.00</span>
+                        </div>
+                        </div>
+                    <div class="data-img">
+                        <img src="img/rtx-removebg-preview.png" alt="">
                     </div>
                 </div>
             </div>
@@ -1229,6 +1242,17 @@
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
