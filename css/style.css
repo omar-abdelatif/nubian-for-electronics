@@ -2605,7 +2605,7 @@ option {
     text-align: center;
     height: auto;
     border-radius: 10px;
-    display: block;
+    display: none;
 }
 
 .copy-link i {
