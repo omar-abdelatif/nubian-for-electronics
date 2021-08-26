@@ -536,6 +536,7 @@ hr {
     height: 570px;
     overflow: hidden;
     position: relative;
+    display: block !important;
 }
 
 .hidden-text {
@@ -2583,21 +2584,34 @@ option {
 
 .copy-link {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.copy-link p {
+.clone-text {
+    border: none;
+    background: none;
+}
+
+.copy {
     position: absolute;
     right: 0;
     top: 40px;
     background-color: #747373;
-    padding: 7px 5px;
+    padding: 7px 20px;
     color: #fff;
     user-select: text !important;
-    width: 450px;
+    width: 500px;
     text-align: center;
     height: auto;
     border-radius: 10px;
-    display: none;
+    display: block;
+}
+
+.copy-link i {
+    color: aqua;
+    font-size: 20px;
 }
 
 .share-color-btn img {
