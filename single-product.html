@@ -780,7 +780,16 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        var btn = document.querySelector('.clone-text');
+
+        btn.addEventListener('click', () => {
+            const textCopied = ClipboardJS.copy(document.querySelector('.copy'));
+            console.log('copied!', textCopied);
+        })
+    </script>
 </body>
 
 </html>
