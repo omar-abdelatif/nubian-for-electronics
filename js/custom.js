@@ -1,6 +1,100 @@
-if (window.top.location.href == "https://omar-abdelatif.github.io/Project/index.html") {
+$(document).ready(function () {
+    // SEARCH
+
+    $('#search').click(function () {
+        $('.input').fadeIn()
+    })
+    $('#close').click(function () {
+        $('.input').fadeOut()
+    })
 
     // OWL CAROUSEL
+
+    $(".parent-related").owlCarousel({
+                items: 4,
+        autoplay: true,
+        loop: true,
+        autoplayHoverPause: true,
+        dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        });
+
+        $(".testmonial-slide").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            margin: 10,
+            autoplayHoverPause: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                },
+                1400: {
+                    items: 5
+                }
+            },
+        });
+
+        $(".shop-category").owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    margin: 10,
+                    autoplayHoverPause: true,
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        1024: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 5
+                        },
+                        1400: {
+                            items: 6
+                        },
+                        1600: {
+                            items: 7
+                        }
+                    },
+    });
 
     $(".carousel-slider").owlCarousel({
         items: 1,
@@ -10,143 +104,6 @@ if (window.top.location.href == "https://omar-abdelatif.github.io/Project/index.
         autoplayHoverPause: true,
         dots: false,
     })
-};
-
-if (window.top.location.href == "https://omar-abdelatif.github.io/Project/about-designer.html") {
-    // OWL CAROUSEL
-
-    $(".testmonial-slide").owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        margin: 10,
-        autoplayHoverPause: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1024: {
-                items: 3
-            },
-            1200: {
-                items: 4
-            },
-            1400: {
-                items: 5
-            }
-        },
-    });
-}
-
-if (window.top.location.href == "https://omar-abdelatif.github.io/Project/single-product.html") {
-
-    // PRODUCT COUNTER
-
-    var proQty = $('.counter');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
-    proQty.on('click', '.qtybtn', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
-        if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        $button.parent().find('input').val(newVal);
-    });
-
-    // PRODUCT ZOOM
-
-    $('.parent-pic').zoom();
-    
-    // COPY CLIPBOARD
-    
-    var btn = document.querySelector('.clone-text');
-
-    btn.addEventListener('click', () => {
-        const textCopied = ClipboardJS.copy(document.querySelector('.copy'));
-        console.log('copied!', textCopied);
-    })
-
-    // OWL CAROUSEL
-
-    $(".parent-related").owlCarousel({
-        items: 4,
-        autoplay: true,
-        loop: true,
-        autoplayHoverPause: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1024: {
-                items: 3
-            },
-            1200: {
-                items: 4
-            }
-        }
-    });
-
-}
-
-if (window.top.location.href == "https://omar-abdelatif.github.io/Project/shop.html") {
-    // CAROUSEL
-
-    $(".shop-category").owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        margin: 10,
-        autoplayHoverPause: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1024: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            },
-            1400: {
-                items: 6
-            },
-            1600: {
-                items: 7
-            }
-        },
-    });
-}
-
-$(document).ready(function () {
 
     // WOW
 
@@ -211,14 +168,36 @@ $(document).ready(function () {
         }
     )
 
-    // SEARCH
+    // PRODUCT COUNTER
 
-    $('#search').click(function () {
-        $('.input').fadeIn()
-    })
-    $('#close').click(function () {
-        $('.input').fadeOut()
-    })
+    var proQty = $('.counter');
+    proQty.prepend('<span class="dec qtybtn">-</span>');
+    proQty.append('<span class="inc qtybtn">+</span>');
+    proQty.on('click', '.qtybtn', function () {
+        var $button = $(this);
+        var oldValue = $button.parent().find('input').val();
+        if ($button.hasClass('inc')) {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
+        }
+        $button.parent().find('input').val(newVal);
+    });
+
+    // PRODUCT ZOOM
+
+    $('.parent-pic').zoom();
+
+    // ADD PRODUCT
+
+    // DELETE PRODUCT
+
+    // COUNTER PRICE MATH
 
     // SCROLL UP
 
@@ -230,5 +209,16 @@ $(document).ready(function () {
         }
     })
 
+    //
+
+    //
+
+    //
+
+    //
 
 })
+// ----------------   JAVASCRIPTS CODES ---------------- \\
+
+
+// COPY LINK
