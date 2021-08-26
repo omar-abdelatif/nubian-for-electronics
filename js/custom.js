@@ -71,6 +71,15 @@ if (window.top.location.href == "https://omar-abdelatif.github.io/Project/single
     // PRODUCT ZOOM
 
     $('.parent-pic').zoom();
+    
+    // COPY CLIPBOARD
+    
+    var btn = document.querySelector('.clone-text');
+
+    btn.addEventListener('click', () => {
+        const textCopied = ClipboardJS.copy(document.querySelector('.copy'));
+        console.log('copied!', textCopied);
+    })
 
     // OWL CAROUSEL
 
