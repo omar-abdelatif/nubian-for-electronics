@@ -14,22 +14,101 @@ $(document).ready(function () {
     })
 
     // OWL CAROUSEL
-        $(".parent-related").owlCarousel({
-                    items: 4,
-                    autoplay: true,
-                    loop: true,
-                    nav: true,
-                        navText: ["<i class='far fa-chevron-left'></i>", '<i class="far fa-chevron-right"></i>'],
-                        autoplayHoverPause: true,
-                        slideSpeed: 100,
-                        itemsDesktop: false,
-                        itemsDesktopSmall: false,
-                        itemsTablet: false,
-                        itemsMobile: false,
-                        goToFirst: true,
-                        goToFirstSpeed: 500,
-                    dots: false,
+
+    $(".parent-related").owlCarousel({
+        items: 4,
+        autoplay: true,
+        loop: true,
+        autoplayHoverPause: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
     });
+
+    $(".testmonial-slide").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        margin: 10,
+        autoplayHoverPause: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            },
+            1400: {
+                items: 5
+            }
+        },
+    });
+
+    $(".shop-category").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        margin: 10,
+        autoplayHoverPause: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1024: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            },
+            1400: {
+                items: 6
+            },
+            1600: {
+                items: 7
+            }
+        },
+    });
+
+    $(".carousel-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+    })
 
     // WOW
 
@@ -119,7 +198,21 @@ $(document).ready(function () {
 
     $('.parent-pic').zoom();
 
-    // 
+    // ADD PRODUCT
+
+    // DELETE PRODUCT
+
+    // COUNTER PRICE MATH
+
+    // COPY LINK
+
+    $('.copy-link').click(function () {
+        $(".copy").fadeToggle();
+    });
+    $('.copy-link').click(function () {
+        $(".copy").select();
+        document.execCommand('copy');
+    });
 
     //
 
@@ -131,12 +224,15 @@ $(document).ready(function () {
 
     //
 
-    //
+})
+// ----------------   JAVASCRIPTS CODES ---------------- \\
 
-    //
 
-    //
+// COPY LINK
 
-    //
-
+let copyText = document.querySelector(".copy-link");
+copyText.querySelector(".clone-text").addEventListener("click", function () {
+    let copyP = copyText.querySelector(".copy");
+    copyP.select();
+    document.execCommand("copy");
 })
