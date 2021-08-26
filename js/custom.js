@@ -46,11 +46,6 @@ if (window.top.location.href == "https://omar-abdelatif.github.io/Project/about-
 }
 
 if (window.top.location.href == "https://omar-abdelatif.github.io/Project/single-product.html") {
-    // COPY LINK
-
-    $('.copy-link').click(function () {
-        $(".copy").fadeToggle();
-    });
 
     // PRODUCT COUNTER
 
