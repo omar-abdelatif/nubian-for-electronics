@@ -1,3 +1,41 @@
+if (window.top.location.href == 'http://127.0.0.1:5500/single-product.html' || 'file:///C:/Users/Phantom/Desktop/Tasks/Project/single-product.html') {
+
+    let inputPrice;
+    let productPrice = document.querySelector('.total').innerHTML;
+
+    function productTotal() {
+        let priceTotal = inputPrice * productPrice;
+        document.querySelector('.total').innerHTML = priceTotal;
+    }
+
+    document.querySelector(".btn-plus").addEventListener("click", function () {
+        inputPrice = document.querySelector(".qty").value;
+        inputPrice++;
+        document.querySelector(".btn-minus").disabled = false;
+        console.log(inputPrice);
+        productTotal();
+    });
+
+    document.querySelector('.btn-minus').addEventListener("click", function () {
+        // value --
+        inputPrice = document.querySelector(".qty").value;
+        inputPrice--;
+        if (inputPrice === 1) {
+            document.querySelector(".btn-minus").disabled = true;
+        }
+        productTotal();
+    });
+
+    // loop 4 images
+
+    let loop = document.querySelector(".img-track").children;
+
+    function k(o) {
+        document.querySelector("img").src = o.children[0].src;
+    }
+    }
+
+
 $(document).ready(function () {
     // SEARCH
 
@@ -15,7 +53,7 @@ $(document).ready(function () {
         autoplay: true,
         loop: true,
         autoplayHoverPause: true,
-        dots: false,
+            dots: false,
             responsive: {
                 0: {
                     items: 1
@@ -69,31 +107,31 @@ $(document).ready(function () {
                     autoplay: true,
                     autoplayTimeout: 2000,
                     margin: 10,
-                    autoplayHoverPause: true,
-                    dots: false,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        576: {
-                            items: 2
-                        },
-                        768: {
-                            items: 3
-                        },
-                        1024: {
-                            items: 4
-                        },
-                        1200: {
-                            items: 5
-                        },
-                        1400: {
-                            items: 6
-                        },
-                        1600: {
-                            items: 7
-                        }
-                    },
+        autoplayHoverPause: true,
+        dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1024: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                },
+                1400: {
+                    items: 6
+                },
+                1600: {
+                    items: 7
+                }
+            },
     });
 
     $(".carousel-slider").owlCarousel({
@@ -170,24 +208,7 @@ $(document).ready(function () {
 
     // PRODUCT COUNTER
 
-    var proQty = $('.counter');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
-    proQty.on('click', '.qtybtn', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
-        if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        $button.parent().find('input').val(newVal);
-    });
+
 
     // PRODUCT ZOOM
 
@@ -197,7 +218,9 @@ $(document).ready(function () {
 
     // DELETE PRODUCT
 
-    // COUNTER PRICE MATH
+    // IMG LOOP
+
+
 
     // SCROLL UP
 
@@ -217,8 +240,4 @@ $(document).ready(function () {
 
     //
 
-})
-// ----------------   JAVASCRIPTS CODES ---------------- \\
-
-
-// COPY LINK
+});
