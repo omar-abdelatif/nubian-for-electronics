@@ -1,4 +1,4 @@
-if (window.top.location.href == 'http://127.0.0.1:5500/single-product.html' || 'file:///C:/Users/Phantom/Desktop/Tasks/Project/single-product.html') {
+if (window.top.location.href == 'https://omar-abdelatif.github.io/Project/single-product.html') {
 
     let inputPrice;
     let productPrice = document.querySelector('.total').innerHTML;
