@@ -499,6 +499,12 @@ hr {
     left: 45px;
 }
 
+.price-cart {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
 .borderBottom {
     border-bottom: 1px solid #fff;
     text-align: center;
@@ -2522,7 +2528,7 @@ option {
 }
 
 .counter span {
-    width: 15px;
+    padding: 10px;
     cursor: pointer;
     text-align: center;
     font-size: 18px;
@@ -2627,10 +2633,11 @@ option {
     border: none;
 }
 
-.img-product img {
+.img-product{
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .img-product.active {
